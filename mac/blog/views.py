@@ -2,6 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def homepage(request):
-    return HttpResponse("Blog Home page")
-    
+def index(request):
+    return render(request,'blog/index.html')    
